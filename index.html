@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Hackatho</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper #00695c teal darken-3">
+            <a href="#" class="brand-logo">CORANU</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="#modal2" class="modal-trigger">Login</a></li>
+                <li><a href="#modal1" class="modal-trigger">Signup</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+
+    <!-- Signup Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Signup</h4>
+            <form autocomplete="off" onsubmit="signup(event)">
+                <input type="email" id="SignupEmail" placeholder="email">
+                <input type="password" id="SignupPassword" placeholder="password">
+                <button class="btn waves-effect waves-light" type="submit">Signup
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <form autocomplete="off" onsubmit="login(event)">
+                <input type="email" id="LoginEmail" placeholder="email">
+                <input type="password" id="LoginPassword" placeholder="password">
+                <button class="btn waves-effect waves-light" type="submit" ><a href="home.html">Login</a>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="app.js"></script>
+    
+</body>
+</html>
+
+
